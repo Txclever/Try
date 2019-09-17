@@ -9,10 +9,35 @@
 </head>
 <body>
 <script>
-    var a = [];
-    for (var i = 0, j = 10; i<= 10; i++,j--){
-        a[i,j] = i+j;
-        document.writeln("a("+i+","+j+")=",a[i,j]+"<br>");
+var age = prompt("请输入数字","");
+    switch (age) {
+        case "1":
+            alert("你是1年级");
+            break;
+        case "2":
+            alert("你是2年级");
+            break;
+        case "3":
+            alert("你是3年级");
+            break;
+        case "4":
+            alert("你是4年级");
+            break;
+        default:
+            alert("请输入正确数字")
+    }
+    var i = 0;
+    while(1){
+        if (i > 5) break;
+        i ++;
+        document.write(i);
+    }
+    x:for(a = 1 ; a<10 ; a++){
+        document.write("<br>"+a+"<br>");
+        for (var b = 1; b < 10; b++){
+            if(a>5) break x;
+            document.write(b);
+        }
     }
 </script>
 </body>
